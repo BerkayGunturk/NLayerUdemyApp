@@ -10,10 +10,10 @@ namespace NLayer.Core
     {
         public int Id { get; set; }
         public string Color { get; set; }
-        public string Height { get; set; }
-        public string Width { get; set; }
+        public int Height { get; set; }
+        public int Width { get; set; }
 
-        public int ProductId { get; set; } //foreing key
+        public int ProductId { get; set; }
 
         public Product Product { get; set; }
     }
