@@ -17,7 +17,7 @@ namespace NLayer.Repository.Repositories
 
         public async Task AddAsync(T entity)
         {
-            await _context.AddAsync(entity);
+            await _dbSet.AddAsync(entity);
         }
 
         public async Task AddRangeAsycn(IEnumerable<T> entities)
