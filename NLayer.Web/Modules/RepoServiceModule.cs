@@ -1,5 +1,4 @@
 ﻿using Autofac;
-using NLayer.Caching;
 using NLayer.Core.Repositories;
 using NLayer.Core.Services;
 using NLayer.Core.UnıtOfWorks;
@@ -11,7 +10,7 @@ using NLayer.Service.Services;
 using System.Reflection;
 using Module = Autofac.Module;
 
-namespace NLayer.API.Modules
+namespace NLayer.Web.Modules
 {
     public class RepoServiceModule : Module
     {
@@ -36,7 +35,7 @@ namespace NLayer.API.Modules
             ("Service")).AsImplementedInterfaces().InstancePerLifetimeScope();
 
 
-            builder.RegisterType<ProductServiceWithCaching>().As<IProductService>();
+
 
 
 

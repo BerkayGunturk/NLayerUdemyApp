@@ -12,10 +12,9 @@ namespace NLayer.API.Controllers
     public class ProductController : CustomBaseController
     {
         private readonly IMapper _mapper;
-        
         private readonly IProductService _service;
 
-        public ProductController(IService<Product> service, IMapper mapper, IProductService productService)
+        public ProductController(IMapper mapper, IProductService productService)
         {
             _mapper = mapper;
             _service = productService;

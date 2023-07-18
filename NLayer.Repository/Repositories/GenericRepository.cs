@@ -52,7 +52,7 @@ namespace NLayer.Repository.Repositories
 
         public void Update(T entity)
         {
-           _dbSet.Update(entity);
+            _dbSet.Update(entity);
         }
 
         public IQueryable<T> Where(Expression<Func<T, bool>> expression)

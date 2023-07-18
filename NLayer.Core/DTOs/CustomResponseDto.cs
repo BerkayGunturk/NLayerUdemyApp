@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using System.Text.Json.Serialization;
 
 namespace NLayer.Core.DTOs
 {
@@ -22,7 +17,8 @@ namespace NLayer.Core.DTOs
         }
 
         public static CustomResponseDto<T> Succes(int statusCode) // Update işlemleri için sadece durum kodu dönmesi yeterli.
-        { return new CustomResponseDto<T> { StatusCode = statusCode };
+        {
+            return new CustomResponseDto<T> { StatusCode = statusCode };
         }
 
         public static CustomResponseDto<T> Fail(int statusCode, List<string> errors) // 1 den fazla fail durumu
