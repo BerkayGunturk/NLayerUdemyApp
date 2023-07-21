@@ -22,7 +22,7 @@ namespace NLayer.Web.Controllers
 
         public async Task<IActionResult> Index()
         {
-            return View(await _services.GetProductWithCateogry());
+            return View((await _services.GetProductWithCateogry()).Data);
         }
 
         public async Task<IActionResult> Save()

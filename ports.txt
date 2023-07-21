@@ -1,0 +1,5 @@
+https://localhost:7186/ -API
+http://localhost:5237   -API
+
+https://localhost:7032  -WEB MVC
+http://localhost:5243   -WEB MVC
